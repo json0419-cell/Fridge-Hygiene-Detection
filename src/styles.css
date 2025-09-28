@@ -1,34 +1,262 @@
+/* =============================
+   Theme Variables
+   ============================= */
 :root{
-    --bg:#0b1020; --panel:#121833; --ink:#e9ecff; --muted:#aab3d6;
-    --pri:#7aa2ff; --acc:#b8f1c9; --line:rgba(122,162,255,.25);
+    --bg:   #0b1020;
+    --panel:#121833;
+    --ink:  #e9ecff;
+    --muted:#aab3d6;
+
+    --pri:  #7aa2ff;
+    --acc:  #b8f1c9;
+
+    --line: rgba(122, 162, 255, .25);
 }
-*{box-sizing:border-box}
-html,body{margin:0;padding:0;background:var(--bg);color:var(--ink);
-    font-family:ui-sans-serif,system-ui,-apple-system,Segoe UI,Roboto,PingFang SC,Helvetica,Arial,"Noto Sans",sans-serif;line-height:1.6}
-a{color:var(--acc);text-decoration:none}
-a:hover{text-decoration:underline}
+
+/* =============================
+   Base Reset & Typography
+   ============================= */
+*{
+    box-sizing: border-box;
+}
+
+html,
+body{
+    margin: 0;
+    padding: 0;
+    background: var(--bg);
+    color: var(--ink);
+    font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, PingFang SC,
+    Helvetica, Arial, "Noto Sans", sans-serif;
+    line-height: 1.6;
+}
+
+a{
+    color: var(--acc);
+    text-decoration: none;
+}
+a:hover{
+    text-decoration: underline;
+}
+
+/* =============================
+   Top Navigation
+   ============================= */
 .nav{
-    position:sticky;top:0;z-index:50;background:rgba(11,16,32,.85);backdrop-filter:blur(6px);
-    border-bottom:1px solid var(--line)
+    position: sticky;
+    top: 0;
+    z-index: 50;
+    background: rgba(11, 16, 32, .85);
+    backdrop-filter: blur(6px);
+    border-bottom: 1px solid var(--line);
 }
-.nav .wrap{max-width:1100px;margin:0 auto;padding:10px;display:flex;gap:10px;flex-wrap:wrap;justify-content:center}
-.nav a{padding:8px 12px;border:1px solid var(--line);border-radius:999px}
-.nav a.active, .nav a:hover{background:var(--pri);color:#0b1020;border-color:transparent}
-.container{max-width:1100px;margin:0 auto;padding:20px}
-h1{font-size:clamp(26px,4vw,40px);margin:12px 0 10px}
-h2{font-size:clamp(20px,3vw,28px);margin:18px 0 12px}
-h3{margin:14px 0 8px}
-.lead{color:var(--muted)}
-.card{background:linear-gradient(180deg, rgba(122,162,255,.08), rgba(122,162,255,.02));
-    border:1px solid var(--line);border-radius:16px;padding:16px;margin:14px 0}
-.grid{display:grid;gap:16px}
-@media(min-width:900px){.grid-2{grid-template-columns:1fr 1fr}.grid-3{grid-template-columns:repeat(3,1fr)}}
-figure{margin:0;border:1px solid rgba(122,162,255,.18);border-radius:12px;overflow:hidden;background:var(--panel)}
-figure img{width:100%;display:block}
-figcaption{font-size:14px;color:var(--muted);padding:8px 10px}
-.table{width:100%;border-collapse:collapse;border:1px solid var(--line);border-radius:10px;overflow:hidden}
-.table th,.table td{padding:10px;border-bottom:1px solid var(--line);text-align:left}
-.badge{display:inline-block;padding:2px 8px;border:1px solid var(--line);border-radius:999px;color:var(--muted);font-size:12px}
-.audio{margin-top:10px;width:100%}
-.footer{padding:32px 0;color:var(--muted);text-align:center;border-top:1px solid var(--line);margin-top:24px}
-.notice{border-left:4px solid var(--pri);background:rgba(122,162,255,.08);padding:10px 12px;border-radius:8px}
+
+.nav .wrap{
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 10px;
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.nav a{
+    padding: 8px 12px;
+    border: 1px solid var(--line);
+    border-radius: 999px;
+}
+.nav a.active,
+.nav a:hover{
+    background: var(--pri);
+    color: #0b1020;
+    border-color: transparent;
+}
+
+/* =============================
+   Containers & Layout
+   ============================= */
+.container{
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.grid{
+    display: grid;
+    gap: 16px;
+}
+
+/* two / three columns on large screens */
+@media (min-width: 900px){
+    .grid-2{ grid-template-columns: 1fr 1fr; }
+    .grid-3{ grid-template-columns: repeat(3, 1fr); }
+}
+
+/* =============================
+   Headings & Text
+   ============================= */
+h1{
+    font-size: clamp(26px, 4vw, 40px);
+    margin: 12px 0 10px;
+}
+
+h2{
+    font-size: clamp(20px, 3vw, 28px);
+    margin: 18px 0 12px;
+}
+
+h3{
+    margin: 14px 0 8px;
+}
+
+.lead{
+    color: var(--muted);
+}
+
+/* =============================
+   Cards
+   ============================= */
+.card{
+    background: linear-gradient(180deg, rgba(122, 162, 255, .08), rgba(122, 162, 255, .02));
+    border: 1px solid var(--line);
+    border-radius: 16px;
+    padding: 16px;
+    margin: 14px 0;
+}
+
+/* =============================
+   Figures (images with captions)
+   ============================= */
+figure{
+    margin: 0;
+    background: var(--panel);
+    border: 1px solid rgba(122, 162, 255, .18);
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+figure img{
+    display: block;
+    width: 100%;
+}
+
+figcaption{
+    font-size: 14px;
+    color: var(--muted);
+    padding: 8px 10px;
+}
+
+/* =============================
+   Tables
+   ============================= */
+.table{
+    width: 100%;
+    border-collapse: collapse;
+    border: 1px solid var(--line);
+    border-radius: 10px;   /* for overflow hidden to take effect in some UAs, wrap in .table-wrap if needed */
+    overflow: hidden;
+}
+
+.table th,
+.table td{
+    padding: 10px;
+    text-align: left;
+    border-bottom: 1px solid var(--line);
+}
+
+/* optional wrapper for horizontal scroll on small screens
+.table-wrap{ overflow-x: auto; } */
+
+/* =============================
+   Badges & Small UI Elements
+   ============================= */
+.badge{
+    display: inline-block;
+    padding: 2px 8px;
+    border: 1px solid var(--line);
+    border-radius: 999px;
+    color: var(--muted);
+    font-size: 12px;
+}
+
+/* =============================
+   Audio Bar
+   ============================= */
+.audio{
+    margin-top: 10px;
+    width: 100%;
+}
+
+/* =============================
+   Footer
+   ============================= */
+.footer{
+    margin-top: 24px;
+    padding: 32px 0;
+    color: var(--muted);
+    text-align: center;
+    border-top: 1px solid var(--line);
+}
+
+/* =============================
+   Notices / Callouts
+   ============================= */
+.notice{
+    padding: 10px 12px;
+    border-left: 4px solid var(--pri);
+    background: rgba(122, 162, 255, .08);
+    border-radius: 8px;
+}
+
+/* =============================
+   Code Blocks
+   ============================= */
+pre.code{
+    background: #0e152a;
+    border: 1px solid rgba(122, 162, 255, .25);
+    border-radius: 12px;
+    padding: 14px;
+    overflow: auto;
+}
+
+pre.code code{
+    color: #e9ecff;
+    font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", monospace;
+    font-size: 0.9rem;
+    white-space: pre; /* preserve formatting */
+}
+
+.btn{
+    display: inline-block;
+    padding: 8px 14px;
+    border-radius: 8px;
+    border: 1px solid var(--line);
+    background: var(--panel);
+    color: var(--ink);
+    font-size: 14px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    text-align: center;
+}
+.btn:hover{
+    background: var(--pri);
+    color: #0b1020;
+    border-color: transparent;
+}
+.btn-primary{
+    background: var(--pri);
+    color: #0b1020;
+    border-color: transparent;
+}
+.btn-primary:hover{
+    filter: brightness(1.1);
+}
+
+/* row of call-to-action buttons */
+.cta-row{
+    margin-top: 12px;
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+}
