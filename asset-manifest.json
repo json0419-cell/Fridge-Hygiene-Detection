@@ -1,0 +1,27 @@
+{
+  "files": {
+    "main.css": "/fridge-hygiene-detection/static/css/main.f25fd2cd.css",
+    "main.js": "/fridge-hygiene-detection/static/js/main.180f943f.js",
+    "static/media/yolo-detection.jpg": "/fridge-hygiene-detection/static/media/yolo-detection.910eda46a34cc7aae049.jpg",
+    "static/media/PhotoelectricSensors.jpg": "/fridge-hygiene-detection/static/media/PhotoelectricSensors.a35b30d944b9520e5716.jpg",
+    "static/media/sensors.m4a": "/fridge-hygiene-detection/static/media/sensors.034f2a3567ea8b9e1793.m4a",
+    "static/media/home.m4a": "/fridge-hygiene-detection/static/media/home.dbb9389ffd452c06368e.m4a",
+    "static/media/frost-vs-no-frost.jpg": "/fridge-hygiene-detection/static/media/frost-vs-no-frost.f9b2132ba4ab5fae6295.jpg",
+    "static/media/k-mean.jpg": "/fridge-hygiene-detection/static/media/k-mean.0b048df9f4fa8fe6b759.jpg",
+    "static/media/methods.m4a": "/fridge-hygiene-detection/static/media/methods.681cdbe7bb1c513b66fd.m4a",
+    "static/media/challenges.m4a": "/fridge-hygiene-detection/static/media/challenges.ae818e5f384297f86c25.m4a",
+    "static/media/future.m4a": "/fridge-hygiene-detection/static/media/future.0e895380f8bb0e9d0a90.m4a",
+    "static/media/quiz.m4a": "/fridge-hygiene-detection/static/media/quiz.7ea6ecf76fc070e6695f.m4a",
+    "static/media/applications.m4a": "/fridge-hygiene-detection/static/media/applications.106ed9e8519db705bcca.m4a",
+    "static/media/RGBCamera.jpg": "/fridge-hygiene-detection/static/media/RGBCamera.b0ed5d8f3b6d61f0721b.jpg",
+    "static/media/references.m4a": "/fridge-hygiene-detection/static/media/references.62604296de5ce184776d.m4a",
+    "static/media/CapacitiveSensors.jpg": "/fridge-hygiene-detection/static/media/CapacitiveSensors.f927210248666c32fa77.jpg",
+    "index.html": "/fridge-hygiene-detection/index.html",
+    "main.f25fd2cd.css.map": "/fridge-hygiene-detection/static/css/main.f25fd2cd.css.map",
+    "main.180f943f.js.map": "/fridge-hygiene-detection/static/js/main.180f943f.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.f25fd2cd.css",
+    "static/js/main.180f943f.js"
+  ]
+}
