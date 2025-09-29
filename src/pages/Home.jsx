@@ -60,7 +60,7 @@ export default function Home(){
                         Using K-means segmentation to estimate frost thickness from camera images,
                         enabling accurate, sensor-free defrost control.
                     </p>
-                    <Link to="/vision" className="btn btn-light">Learn More</Link>
+                    <Link to="/methods" className="btn btn-light">Learn More</Link>
                 </div>
                 <div className="card">
                     <h3>Hygiene Monitoring</h3>
@@ -76,7 +76,7 @@ export default function Home(){
             <div className="card">
                 <h2>How to Use This Tutorial</h2>
                 <ol>
-                    <li>Start with <Link to="/vision">Vision</Link> to learn the methods.</li>
+                    <li>Start with <Link to="/methods">methods page</Link> to learn the methods.</li>
                     <li>Explore <Link to="/applications">Applications</Link> for real-world scenarios.</li>
                     <li>Review <Link to="/challenges">Challenges</Link> to understand limitations.</li>
                     <li>Look ahead to <Link to="/future">Future</Link> research directions.</li>
