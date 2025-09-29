@@ -1,6 +1,6 @@
 import React from "react";
 import AudioBar from "../components/AudioBar";
-import chAudio from "../assets/audio/challenges.mp3";
+import chAudio from "../assets/audio/challenges.m4a";
 
 
 export default function Challenges(){

@@ -1,6 +1,6 @@
 import React from "react";
 import AudioBar from "../components/AudioBar";
-import appAudio from "../assets/audio/applications.mp3";
+import appAudio from "../assets/audio/applications.m4a";
 
 export default function Applications(){
     return (

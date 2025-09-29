@@ -2,7 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 import AudioBar from "../components/AudioBar";
 import frostCompare from "../assets/img/frost-vs-no-frost.jpg";
-import homeAudio from "../assets/audio/home.mp3";
+import homeAudio from "../assets/audio/home.m4a";
 
 export default function Home(){
     return (

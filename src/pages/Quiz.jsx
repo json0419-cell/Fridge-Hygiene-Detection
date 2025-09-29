@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import AudioBar from "../components/AudioBar";
-import quizAudio from "../assets/audio/quiz.mp3";
+import quizAudio from "../assets/audio/quiz.m4a";
 
 const QUESTIONS = [
     {

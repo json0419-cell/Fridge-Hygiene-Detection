@@ -1,6 +1,6 @@
 import React from "react";
 import AudioBar from "../components/AudioBar";
-import sensorsAudio from "../assets/audio/sensors.mp3";
+import sensorsAudio from "../assets/audio/sensors.m4a";
 import { Link } from "react-router-dom";
 import photoelectricImg from "../assets/img/PhotoelectricSensors.jpg";
 import capacitiveImg from "../assets/img/CapacitiveSensors.jpg";

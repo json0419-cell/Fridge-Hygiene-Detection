@@ -2,12 +2,12 @@ import React from "react";
 import AudioBar from "../components/AudioBar";
 import yoloImg from "../assets/img/yolo-detection.jpg";
 import kmean from "../assets/img/k-mean.jpg"
-import visionAudio from "../assets/audio/vision.mp3";
+import visionAudio from "../assets/audio/methods.m4a";
 
-export default function Vision(){
+export default function Methods(){
     return (
         <>
-            <h1>Vision-Based Approaches</h1>
+            <h1>Methods</h1>
             <p className="lead">
                 This page presents two representative computer vision methods with detailed implementation procedures:
                 (1) frost thickness estimation via K-means segmentation and regression, and

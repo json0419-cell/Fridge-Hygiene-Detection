@@ -1,6 +1,6 @@
 import React from "react";
 import AudioBar from "../components/AudioBar";
-import futureAudio from "../assets/audio/future.mp3";
+import futureAudio from "../assets/audio/future.m4a";
 import {Link} from "react-router-dom";
 
 export default function Future(){

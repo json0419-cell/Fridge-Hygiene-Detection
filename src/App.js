@@ -3,7 +3,7 @@ import { Routes, Route, Navigate } from "react-router-dom";
 import NavBar from "./components/NavBar";
 import Home from "./pages/Home";
 import Sensors from "./pages/Sensors";
-import Vision from "./pages/Vision";
+import Methods from "./pages/Methods";
 import Applications from "./pages/Applications";
 import Challenges from "./pages/Challenges";
 import Future from "./pages/Future";
@@ -18,7 +18,7 @@ export default function App() {
                 <Routes>
                     <Route path="/" element={<Home />} />
                     <Route path="/sensors" element={<Sensors />} />
-                    <Route path="/vision" element={<Vision />} />
+                    <Route path="/methods" element={<Methods />} />
                     <Route path="/applications" element={<Applications />} />
                     <Route path="/challenges" element={<Challenges />} />
                     <Route path="/future" element={<Future />} />

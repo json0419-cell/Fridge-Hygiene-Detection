@@ -1,7 +1,7 @@
 import React, { useEffect } from "react";
 import { useLocation } from "react-router-dom";
 import AudioBar from "../components/AudioBar";
-import refAudio from "../assets/audio/reference.mp3";
+import refAudio from "../assets/audio/references.m4a";
 
 export default function References(){
     const location = useLocation();
