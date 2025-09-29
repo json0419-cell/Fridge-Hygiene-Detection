@@ -3,6 +3,7 @@ import AudioBar from "../components/AudioBar";
 import yoloImg from "../assets/img/yolo-detection.jpg";
 import kmean from "../assets/img/k-mean.jpg"
 import visionAudio from "../assets/audio/methods.m4a";
+import modelingdata from "../assets/img/3ddata.jpg";
 
 export default function Methods(){
     return (
@@ -188,6 +189,13 @@ export default function Methods(){
                     <strong>Solution:</strong> Generate synthetic images with 3D modeling (e.g., Blender) and apply domain randomization (lighting, textures, occlusion).
                     Detectors trained largely on synthetic data can transfer to real-world with modest fine-tuning. Adding just a few hundred real images significantly improves mAP [<a href="#/references#ref4">4</a>].
                 </p>
+                <figure>
+                    <img src={modelingdata} alt="3D modeling Data"/>
+                    <figcaption>
+                        Synthetic Data. <em>Image source:</em>
+                        <a href="https://arxiv.org/abs/1706.06782" target="_blank" rel="noopener noreferrer">Object Detection Using Deep CNNs Trained on Synthetic Images</a>
+                    </figcaption>
+                </figure>
                 <p><em>Takeaway:</em> Diversity matters more than photorealism. Start with synthetic → fine-tune on a curated real set for the target fridge environment.</p>
             </div>
         </>
